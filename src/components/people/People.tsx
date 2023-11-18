@@ -7,11 +7,10 @@ type CharacterHouse = {
   name: string;
 };
 
-
 type Character = {
   name: string;
   slug: string;
-  house: CharacterHouse | null;
+  house: CharacterHouse ;
   quotes: string[];
 };
 const People = () => {

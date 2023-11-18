@@ -42,9 +42,7 @@ export const getCharacters = async () => {
 
 export const getCharacterDetails = async () => {
   try {
-    const response = await fetch(
-      "https://api.gameofthronesquotes.xyz/v1/characters"
-    ); 
+    const response = await fetch(`${CHARACTERS_BASE_URL}`);
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }

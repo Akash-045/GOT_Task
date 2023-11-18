@@ -29,7 +29,7 @@ const PersonDetail = () => {
         );
         if (foundCharacter) {
           setPerson(foundCharacter);
-          setDisplayedQuotes(foundCharacter.quotes.slice(0, 5)); // Display first 5 quotes initially
+          setDisplayedQuotes(foundCharacter.quotes.slice(0, 5)); 
         }
       }
     };
@@ -40,7 +40,7 @@ const PersonDetail = () => {
   const refreshQuotes = () => {
     if (person && person.quotes.length > 0) {
       const shuffledQuotes = [...person.quotes].sort(() => 0.5 - Math.random());
-      setDisplayedQuotes(shuffledQuotes.slice(0, 5)); // Update with a new set of 5 quotes
+      setDisplayedQuotes(shuffledQuotes.slice(0, 5)); 
     }
   };
   return (
