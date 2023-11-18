@@ -46,6 +46,7 @@ const People = () => {
           <h3>
             <Link to={`/people/${character.slug}`}>{character.name}</Link>
           </h3>
+          <p>{character.house?.name}</p>
         </div>
       ))}
     </div>
